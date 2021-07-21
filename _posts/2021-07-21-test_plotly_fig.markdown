@@ -4,6 +4,8 @@ title:  "Test Plotly Figure"
 date:   2021-07-21 11:21:00 +0800
 categories: jekyll update
 ---
+[jekyllrb.com](https://jekyllrb.com/)
+
 
 {% include figure.html %}
 
