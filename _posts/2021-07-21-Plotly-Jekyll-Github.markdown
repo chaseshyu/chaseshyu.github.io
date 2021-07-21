@@ -6,7 +6,7 @@ categories: jekyll update
 ---
 
 [Jekyll – 超好用靜態網站產生器](https://blog.wildsky.cc/posts/static-generator-jekyll)
-
+[學習如何將Plotly轉換成靜態網站](https://github.com/covid19-dash)
 
 
 Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
