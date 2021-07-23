@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[33]:
+# In[1]:
 
 
 import datetime
@@ -39,7 +39,7 @@ last_date = datetime.datetime.fromisoformat('2021-07-21')
 dpi = 200
 
 
-# In[37]:
+# In[2]:
 
 
 def isEnglish(s):
@@ -92,7 +92,7 @@ def verticalizeText(text):
     return text_v
 
 
-# In[38]:
+# In[3]:
 
 
 df = pd.read_csv(csv_filename)
@@ -108,7 +108,7 @@ df.loc[ind,InjectedAmountCorrect] = df.loc[ind,InjectedAmount]
 df['mavg'] = df[InjectedAmountCorrect].interpolate()
 
 
-# In[98]:
+# In[4]:
 
 
 vaccine_color = '#6F00D2'
@@ -317,10 +317,10 @@ for d in dates_infected:
 fig.update_layout(
     plot_bgcolor=plot_bgcolor,
     title={'text': title,'x':0.5,'xanchor': 'center'},
-    margin_l=0,
-    margin_r=0,
-    margin_t=50,
-    margin_b=0,
+#    margin_l=0,
+#    margin_r=0,
+#    margin_t=50,
+#    margin_b=0,
     autosize=True)
 
 
@@ -402,14 +402,7 @@ fig.show()
 #pio.write_html(fig, file='_includes/figure.html', auto_open=False)
 
 
-# In[99]:
-
-
-# convert to .py
-get_ipython().system('jupyter nbconvert --to script graph.ipynb')
-
-
-# In[100]:
+# In[8]:
 
 
 # https://github.com/plotly/plotly.py/issues/1756
@@ -491,10 +484,11 @@ with open('_includes/figure.html', 'w') as f:
     f.write(html_str)
 
 
-# In[101]:
+# In[9]:
 
 
-eventURL
+# convert to .py
+get_ipython().system('jupyter nbconvert --to script graph.ipynb')
 
 
 # In[ ]:
