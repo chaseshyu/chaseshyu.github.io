@@ -108,7 +108,7 @@ df.loc[ind,InjectedAmountCorrect] = df.loc[ind,InjectedAmount]
 df['mavg'] = df[InjectedAmountCorrect].interpolate()
 
 
-# In[86]:
+# In[98]:
 
 
 vaccine_color = '#6F00D2'
@@ -180,11 +180,8 @@ for i in eventURL.index[ind]:
     if '#' in text:
         text = text.replace('#','')
         text = ''.join([i for i in text if not i.isdigit()])
-    text += ' {:%B %d, %Y}'.format(i)
-    if not '#' in text:
-        eventURL[i] = 'https://www.google.com/search?q="' +text+ '"'#'https://www.google.com'
-    else:
-        eventURL[i] = 'https://www.google.com/search?q="' +text+ '"'
+    text += '+{:%B+%d+%Y}'.format(i)
+    eventURL[i] = 'https://www.google.com/search?q=' +text#'https://www.google.com'
 
 label = label.to_numpy()
 eventURL = eventURL.to_numpy()
@@ -405,14 +402,14 @@ fig.show()
 #pio.write_html(fig, file='_includes/figure.html', auto_open=False)
 
 
-# In[87]:
+# In[99]:
 
 
 # convert to .py
 get_ipython().system('jupyter nbconvert --to script graph.ipynb')
 
 
-# In[88]:
+# In[100]:
 
 
 # https://github.com/plotly/plotly.py/issues/1756
@@ -494,7 +491,7 @@ with open('_includes/figure.html', 'w') as f:
     f.write(html_str)
 
 
-# In[89]:
+# In[101]:
 
 
 eventURL
