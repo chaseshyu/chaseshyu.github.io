@@ -1,0 +1,7 @@
+
+
+Rebiuld
+$ bundle exec jekyll build
+
+Run test local server
+$ bundle exec jekyll server
