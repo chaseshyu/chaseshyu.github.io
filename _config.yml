@@ -23,7 +23,7 @@ email: chaseshyu@gmail.com
 #description: >- # this means to ignore newlines until "baseurl:"
 description: "Mountain hiking >> Logic programming >> Spiritual questing >> Human being"
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "chaseshyu.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://chaseshyu.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: chaseshyu
 github_username:  chaseshyu
 
@@ -31,6 +31,7 @@ github_username:  chaseshyu
 theme: minima
 plugins:
   - jekyll-feed
+#  - jekyll-seo-tag
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -51,4 +52,10 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+disqus:
+  shortname: limitlessping
+
+timezone: Asia/Taipei
+
 htmlwidgets: TRUE
