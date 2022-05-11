@@ -54,7 +54,7 @@ plugins:
 #   - vendor/ruby/
 
 disqus:
-  shortname: limitlessping
+  shortname: chaseshyu
 
 timezone: Asia/Taipei
 
