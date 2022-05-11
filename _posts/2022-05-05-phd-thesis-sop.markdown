@@ -3,6 +3,9 @@ layout: post
 title:  "博士論文寫作準備流程"
 date:   2022-05-05 12:00:00 +0800
 categories: diary
+author: Chase
+tags:
+- Dynalist
 ---
 
 工具：
