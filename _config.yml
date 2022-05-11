@@ -53,8 +53,10 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
-disqus:
-  shortname: chaseshyu
+comments :
+  provider : disqus
+  disqus :
+    short_name : chaseshyu
 
 timezone: Asia/Taipei
 
